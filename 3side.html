@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Ilhamm Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Share+Tech+Mono&display=swap" rel="stylesheet"/>
+    <style>
+      .neon-pink {
+        text-shadow:
+          0 0 5px #ff0080,
+          0 0 10px #ff0080,
+          0 0 20px #ff0080,
+          0 0 40px #ff0080;
+      }
+      .neon-blue {
+        font-family: 'Share Tech Mono', monospace;
+        text-shadow:
+          0 0 5px #00ffff,
+          0 0 10px #00ffff,
+          0 0 20px #00ffff,
+          0 0 40px #00ffff;
+      }
+      .tab-content {
+        display: none;
+      }
+      .active-tab {
+        display: block;
+      }
+    </style>
+  </head>
+  <body class="bg-[#111111] min-h-screen flex flex-col items-center font-sans text-yellow-400">
+    <!-- Top background image -->
+    <div class="w-full max-w-md relative">
+      <img class="w-full h-36 object-cover" src="https://storage.googleapis.com/a1aa/image/2aa1436e-e2bf-4a39-a96e-d8adef57e42e.jpg" alt="Background" />
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+        <h1 class="font-extrabold text-lg md:text-xl">Ilhamm</h1>
+        <p class="italic text-xs md:text-sm">Developer Bot WhatsApp/2021</p>
+      </div>
+    </div>
+
+    <!-- Profile image -->
+    <div class="relative -mt-16 mb-4">
+      <img class="rounded-full border-4 border-black shadow-lg" src="https://storage.googleapis.com/a1aa/image/4a13646e-052d-4bfc-ff55-c3f4c35166c7.jpg" alt="Profile" width="120" height="120" />
+    </div>
+
+    <!-- Tabs -->
+    <div class="w-full max-w-md px-2">
+      <div class="flex justify-between bg-[#111111] rounded-full py-2 px-6 mb-2 border border-pink-500">
+        <button onclick="showTab('project')" class="text-pink-500 font-bold text-sm">
+          <i class="fas fa-code"></i>
+          <span class="ml-1">Project</span>
+        </button>
+        <button onclick="showTab('biodata')" class="text-yellow-400 font-bold text-sm">
+          <i class="fas fa-user"></i>
+          <span class="ml-1">Biodata</span>
+        </button>
+        <button onclick="showTab('darkside')" class="text-yellow-400 font-bold text-sm">
+          <i class="fas fa-skull"></i>
+          <span class="ml-1">My Dark Side</span>
+        </button>
+      </div>
+
+      <!-- Project Tab -->
+      <div id="project" class="tab-content active-tab bg-[#111111] rounded-3xl border border-pink-500 p-6 text-center">
+        <p class="neon-pink font-mono font-bold text-xl mb-4 select-none">My Projects</p>
+        <p class="text-yellow-400 font-semibold mb-2">- WhatsApp Bot Multi-Device</p>
+        <p class="text-yellow-400 font-semibold mb-2">- Web Portfolio dengan TailwindCSS</p>
+        <p class="text-yellow-400 font-semibold mb-2">- API sederhana dengan Node.js + Express</p>
+        <p class="text-yellow-400 font-semibold mb-6">- Project lainnya masih dalam tahap belajar dan eksperimen</p>
+      </div>
+
+      <!-- Biodata Tab -->
+      <div id="biodata" class="tab-content bg-[#111111] rounded-3xl border border-pink-500 p-6 text-center">
+        <p class="neon-blue text-xl font-bold mb-2">Biodata</p>
+        <p class="text-yellow-400 text-sm">just a guy who codes, overthinks, and builds things that maybe no one asked for.</p>
+      </div>
+
+      <!-- My Dark Side Tab -->
+      <div id="darkside" class="tab-content bg-[#111111] rounded-3xl border border-pink-500 p-6 text-left text-white">
+        <h2 class="text-lg font-bold mb-3 border-b border-pink-500 pb-1">my dark side</h2>
+        <blockquote class="italic text-sm text-gray-300 mb-4 leading-relaxed">
+          “don’t try to fix me, i’m not broken.”<br>
+          not your typical nice guy. i overthink, disappear randomly, and feel too much.<br>
+          masked in silence, loud in my mind.<br>
+          still breathing, barely living.<br>
+          dm at your own risk.
+        </blockquote>
+        <div class="my-4 text-center">
+          <img src="https://i.imgur.com/5Dn0yua.gif" alt="dark gif" class="rounded-lg shadow-lg max-w-full h-auto inline-block" />
+        </div>
+        <audio controls class="w-full mt-2">
+          <source src="https://c.top4top.io/m_3415zhulx0.mp3" type="audio/mpeg">
+          your browser does not support the audio element.
+        </audio>
+      </div>
+    </div>
+
+    <script>
+      function showTab(tabId) {
+        const tabs = document.querySelectorAll('.tab-content');
+        tabs.forEach(tab => tab.classList.remove('active-tab'));
+        document.getElementById(tabId).classList.add('active-tab');
+      }
+    </script>
+  </body>
+</html>
