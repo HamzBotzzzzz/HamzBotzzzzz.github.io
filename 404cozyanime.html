@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 - You Seem Lost</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://i.ibb.co/DG1H7T6/anime-room-bg.gif') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Outfit', sans-serif;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      backdrop-filter: blur(6px);
+    }
+    .card {
+      background-color: rgba(30, 30, 30, 0.65);
+      padding: 2rem 3rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      text-align: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    a {
+      background-color: #14b8a6;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.75rem;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    a:hover {
+      background-color: #0d9488;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>404 - You Seem Lost, Senpai...</h1>
+    <p>Looks like this page doesn’t exist.<br>Maybe it teleported to another dimension?</p>
+    <a href="/">Take Me Home</a>
+  </div>
+</body>
+</html>

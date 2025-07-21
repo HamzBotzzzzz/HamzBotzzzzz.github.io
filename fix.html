@@ -1,0 +1,262 @@
+<!DOCTYPE html><html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfect Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <!-- AOS CSS -->
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body.intro-active {
+  overflow: hidden;
+}
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-950 text-white">
+  <!-- Terminal Intro -->
+<div id="intro-terminal" class="fixed inset-0 bg-black text-green-400 text-sm font-mono z-[9999] flex items-center justify-center px-6">
+  <pre id="intro-text" class="whitespace-pre-wrap leading-relaxed"></pre>
+</div>
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: false, // 👈 penting ini: animasi akan aktif terus tiap elemen masuk view
+    duration: 800,
+    easing: 'ease-in-out',
+    mirror: true // 👈 animasi bakal ke-trigger balik saat scroll ke atas
+  });
+</script>
+    <!-- Navbar -->
+    <nav class="fixed top-0 w-full z-50 bg-gray-900 bg-opacity-70 backdrop-blur border-b border-gray-800">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <h1 class="text-2xl font-bold text-white">ilhammmm.dev</h1>
+        <ul class="flex gap-6 text-sm font-semibold">
+          <li><a href="#hero" class="hover:text-emerald-400">Home</a></li>
+          <li><a href="#about" class="hover:text-emerald-400">About</a></li>
+          <li><a href="#projects" class="hover:text-emerald-400">Projects</a></li>
+          <li><a href="#contact" class="hover:text-emerald-400">Contact</a></li>
+          <li><a href="#screenshots" class="hover:text-emerald-400">Screenshots</a></li>
+        </ul>
+      </div>
+    </nav><!-- Hero -->
+<section id="hero" class="min-h-screen flex items-center justify-center text-center px-4 pt-28">
+  <div>
+    <h2 class="text-5xl md:text-6xl font-extrabold leading-tight">Hi, I'm Ilham</h2>
+    <p class="mt-4 text-lg text-gray-400 max-w-xl mx-auto">A passionate web developer focused on building beautiful & performant websites with JavaScript, TailwindCSS, and love.</p>
+    <a href="#projects" class="mt-8 inline-block bg-emerald-500 text-white font-semibold px-6 py-3 rounded-lg shadow-lg hover:scale-105 transition">See My Work</a>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="py-24 bg-gray-900 px-4">
+  <div class="max-w-4xl mx-auto">
+    <h3 class="text-3xl font-bold mb-6">About Me</h3>
+    <p class="text-gray-400 text-lg leading-relaxed">I'm a self-taught web developer who enjoys solving problems and building things that live on the internet. From simple landing pages to full-stack applications, I love the process of bringing ideas to life.</p>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="py-24 px-4">
+  <div class="max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold mb-12 text-center">Featured Projects</h3>
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <!-- RaydzennBot -->
+<div class="bg-gray-800 rounded-xl shadow-lg p-6 hover:scale-[1.02] transition" data-aos="fade-up" data-aos-delay="200">
+  <h4 class="text-xl font-bold mb-2">RaydzennBot</h4>
+  <p class="text-gray-400 mb-3">A powerful WhatsApp bot base with plugin support, advanced exploit commands, and real-time backend execution.</p>
+  <a href="#screenshots" class="text-emerald-400 font-semibold">View Project →</a>
+</div>
+
+      <!-- WiFi Brute Portal -->
+      <div class="bg-gray-800 rounded-xl shadow-lg p-6 hover:scale-[1.02] transition" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="text-xl font-bold mb-2">WiFi Brute Portal</h4>
+        <p class="text-gray-400 mb-3">Terminal-based Python tool to brute-force 6-digit alphanumeric vouchers for login portals like arnetha.id.</p>
+        <a href="#" class="text-emerald-400 font-semibold">View Project →</a>
+      </div>
+
+      <!-- Layer7 DDoS Script -->
+<div class="bg-gray-800 rounded-xl shadow-lg p-6 hover:scale-[1.02] transition" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="text-xl font-bold mb-2">Layer7 DDoS Script</h4>
+        <p class="text-gray-400 mb-3">A lightweight Python-based Layer7 DDoS attack tool using socket flooding and randomized headers. Targeted HTTP/HTTPS servers for educational and stress-testing purposes.</p>
+        <a href="#" class="text-emerald-400 font-semibold">View Project →</a>
+      </div>
+
+      <!-- Telegram Bot Spammer -->
+      <div class="bg-gray-800 rounded-xl shadow-lg p-6 hover:scale-[1.02] transition" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="text-xl font-bold mb-2">Telegram Bot Spammer</h4>
+        <p class="text-gray-400 mb-3">A custom Telegram bot written in Node.js with auto-reply flood, sticker spam, and mass mention for testing group protection.</p>
+        <a href="#" class="text-emerald-400 font-semibold">View Project →</a>
+      </div>
+
+      <!-- Simple Portfolio Website -->
+      <div class="bg-gray-800 rounded-xl shadow-lg p-6 hover:scale-[1.02] transition" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="text-xl font-bold mb-2">Simple Portfolio</h4>
+        <p class="text-gray-400 mb-3">A clean responsive portfolio built with HTML, Tailwind CSS, and GSAP animation for smooth scroll reveal and section transitions.</p>
+        <a href="#" class="text-emerald-400 font-semibold">View Project →</a>
+      </div>
+
+      <!-- C++ Game Dev Roadmap -->
+      <div class="bg-gray-800 rounded-xl shadow-lg p-6 hover:scale-[1.02] transition" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="text-xl font-bold mb-2">C++ Game Dev Roadmap</h4>
+        <p class="text-gray-400 mb-3">Currently starting C++ to dive into game development. Focused on mastering SDL/OpenGL with a future plan to create a 2D platformer game.</p>
+        <a href="#" class="text-emerald-400 font-semibold">Coming Soon →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="py-24 bg-gray-900 px-4">
+  <div class="max-w-2xl mx-auto text-center">
+    <h3 class="text-3xl font-bold mb-6">Let's Connect</h3>
+    <p class="text-gray-400 mb-6">Feel free to reach out for collaborations or just a friendly hello!</p>
+    <a href="mailto:zxynnbotzz@gmail.com" class="inline-block bg-emerald-500 px-6 py-3 rounded-lg text-white font-semibold shadow hover:scale-105 transition">Email Me</a>
+  </div>
+</section>
+<!-- Screenshots -->
+<section id="screenshots" class="py-24 px-4 bg-gray-950">
+  <div class="max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold mb-12 text-center">RaydzennBot Screenshots</h3>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+      
+      <!-- Screenshot Card -->
+      <div class="bg-gray-900 rounded-xl overflow-hidden shadow-lg hover:scale-[1.02] transition">
+        <img src="screenshot-raydzennbot.jpg" alt="RaydzennBot Screenshot" class="w-full h-56 object-cover">
+        <div class="p-5">
+          <h4 class="text-lg font-semibold mb-2">Delay-vip Command</h4>
+          <p class="text-gray-400 text-sm">Command `.Delay-vip` berhasil dikirim ke nomor target. Digunakan untuk auto-delay exploit dan testing filter spam.</p>
+        </div>
+      </div>
+
+      <!-- Tambah screenshot lain di sini tinggal copy block atas -->
+
+    </div>
+  </div>
+</section>
+<!-- Terminal Simulator Visual Only -->
+<section id="terminal-sim" class="py-24 px-4 bg-gray-950">
+  <div class="max-w-4xl mx-auto">
+    <h3 class="text-3xl font-bold mb-6 text-center">Fake Terminal Bug Simulator</h3>
+    <div class="bg-black rounded-xl shadow-lg p-6 text-green-400 font-mono text-sm relative overflow-hidden">
+      <div id="terminal-output" class="whitespace-pre-wrap leading-relaxed min-h-[200px]"></div>
+      <input 
+        id="terminal-input" 
+        type="text" 
+        placeholder="Type .raydzenn1 628xxxxxxx" 
+        class="w-full mt-4 bg-gray-800 text-green-300 p-3 rounded focus:outline-none"
+      />
+      <p class="text-xs text-gray-500 mt-2">Note: This is a visual simulation only. No real commands are executed.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+  const input = document.getElementById('terminal-input');
+  const output = document.getElementById('terminal-output');
+
+  input.addEventListener('keydown', async (e) => {
+    if (e.key === 'Enter') {
+      const command = input.value.trim();
+      if (command.length === 0) return;
+      input.disabled = true;
+
+      await typeLine(`> ${command}\n`);
+      await typeLine(`\n[SIMULATION ©ilhamm] Starting fake attack on target: ${command.split(' ')[1] || 'unknown'}\n`);
+      await delay(500);
+      await typeLine(`Sending payload...`);
+      await dots();
+      await typeLine(`\nStatus: SUCCESS ✓\n`);
+      await typeLine(`--------------------------\n`);
+      
+      input.value = '';
+      input.disabled = false;
+      input.focus();
+    }
+  });
+
+  function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  async function typeLine(line) {
+    for (let i = 0; i < line.length; i++) {
+      output.innerHTML += line[i];
+      await delay(20);
+    }
+  }
+
+  async function dots() {
+    for (let i = 0; i < 3; i++) {
+      output.innerHTML += '.';
+      await delay(300);
+    }
+  }
+</script>
+<!-- Footer -->
+<footer class="py-6 text-center text-sm text-gray-500 border-t border-gray-800">
+  &copy; 2025 ilhammmm.dev. All rights reserved.
+</footer>
+
+<!-- Scroll Reveal Init -->
+<script>
+  ScrollReveal().reveal('section', {
+    delay: 100,
+    duration: 1000,
+    origin: 'bottom',
+    distance: '40px',
+    easing: 'ease-in-out',
+    reset: false
+  });
+</script>
+<script>
+  const introText = document.getElementById('intro-text');
+  const introContainer = document.getElementById('intro-terminal');
+  document.body.classList.add('intro-active');
+
+  const introLines = [
+    "> Booting up ilhamm.dev...",
+    "> Initializing modules...",
+    "> Loading Projects...",
+    "> Welcome, user."
+  ];
+
+  async function typeIntroLine(line) {
+    for (let i = 0; i < line.length; i++) {
+      introText.textContent += line[i];
+      await new Promise(res => setTimeout(res, 30));
+    }
+    introText.textContent += "\n";
+    await new Promise(res => setTimeout(res, 500));
+  }
+
+  async function runIntro() {
+    for (const line of introLines) {
+      await typeIntroLine(line);
+    }
+
+    await new Promise(res => setTimeout(res, 800));
+
+    introContainer.style.transition = "opacity 0.5s ease";
+    introContainer.style.opacity = "0";
+
+    setTimeout(() => {
+      introContainer.remove();
+      document.body.classList.remove('intro-active');
+    }, 500);
+  }
+
+  window.addEventListener("load", runIntro);
+</script>
+  </body>
+</html>
